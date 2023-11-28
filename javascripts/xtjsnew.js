@@ -46,13 +46,13 @@ var op2='0.8';
 var opr='0.9';
 //end ambil judul
 if(produk=='com'){
-var landing = 'muvia.xyz';
+var landing = 'gomovie.us';
 }else{
-var landing = 'muvia.xyz';
+var landing = 'gomovie.us';
 }
 try{
 var rm = document.getElementById("rmore").innerHTML;
-var rm2 = rm.replace(rm,'<a href="http://'+landing+'/'+rm+'/'+tls+'.html" title="Download '+tl+'" style="-webkit-border-radius: 7;-moz-border-radius: 7;border-radius: 7px;font-family: Arial;color: #ffffff;font-size: 16px;background: #d61a1a;padding: 5px 10px 5px 10px;text-decoration: none;">Read More and Play >></a>');
+var rm2 = rm.replace(rm,'<a href="http://'+landing+'/play.html?id=tt'+rm+'" title="Download '+tl+'" target="_blank" style="-webkit-border-radius: 7;-moz-border-radius: 7;border-radius: 7px;font-family: Arial;color: #ffffff;font-size: 16px;background: #d61a1a;padding: 5px 10px 5px 10px;text-decoration: none;">Read More and Play >></a>');
 document.getElementById("rmore").innerHTML=rm2;
 }catch(e){}
 var vdi = "";
@@ -67,20 +67,21 @@ var ebd = "<iframe class=\"youtube-player\" type=\"text/html\" width=\"560\" hei
 }else{
 var ebd = "";
 }
+
 var a=document.getElementById("tbl1").innerHTML;
-var k='http://'+landing+'/play.php?movie='+a;
+var k='http://'+landing+'/play.html?id='+a;
 var c=document.getElementById("tbl2").innerHTML;
-//var c2=c.replace(c,'<center><a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Streaming '+tl+'"  id="ke"><img src="'+wGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';" alt="Streaming '+tl+'" /></a></center>');
-var c2=c.replace(c,'<center><a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Streaming '+tl+'"  id="ke"><img src="http://2.bp.blogspot.com/-D8I6lMViCL4/U7C1fHM5MOI/AAAAAAAAAPU/Uisua7fLIKY/s1600/watch-hd.png" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';" alt="Streaming '+tl+'" /></a></center>');
+//var c2=c.replace(c,'<center><a href="http://'+landing+'" title="Streaming '+tl+'"  id="ke"><img src="'+wGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';" alt="Streaming '+tl+'" /></a></center>');
+var c2=c.replace(c,'<center><a href="http://'+landing+'" title="Streaming '+tl+'"  id="ke" target="_blank"><img src="http://2.bp.blogspot.com/-D8I6lMViCL4/U7C1fHM5MOI/AAAAAAAAAPU/Uisua7fLIKY/s1600/watch-hd.png" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';" alt="Streaming '+tl+'" /></a></center>');
 document.getElementById("tbl2").innerHTML=c2;
 var e=document.getElementById("backdrop").innerHTML;
-var e2=e.replace(e,'<center><img src="http://muvia.xyz/b'+a+'" width="560" height="auto" alt="'+tl+'"/></center>');
+var e2=e.replace(e,'<center><img src="http://gomovie.us/b'+a+'/'+tls+'.jpg" width="560" height="auto" alt="'+tl+'"/></center>');
 document.getElementById("backdrop").innerHTML=e2;
 var s=document.getElementById("pst").innerHTML;
-var s2=s.replace(s,'<img src="http://muvia.xyz/p'+a+'" width="200" height="300" alt="'+tl+'"/>');
+var s2=s.replace(s,'<img src="http://gomovie.us/p'+a+'/'+tls+'.jpg" width="200" height="300" alt="'+tl+'"/>');
 document.getElementById("pst").innerHTML=s2;
-//var a2=a.replace(a,'<br /><center><div style="background:url(http://muvia.xyz/s'+a+'); background-repeat: no-repeat;"><a href="javascript:void()" id="tuju4" onclick="noti()"><img src="http://1.bp.blogspot.com/-CfKgs9Z7mUw/VUq8PSlKkLI/AAAAAAAAAYQ/9D_7GbwGWfY/s1600/playbox3.png" alt="Movie Player" style="opacity:0.8; width:100%; height:100%" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+op2+';"/></a></div><br /><a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Download '+tl+'" id="tuju1" onclick="noti()" ><img src="'+dGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a><a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Streaming '+tl+'" id="tuju2" onclick="noti()" ><img src="'+wGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a><a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Free Trial Download '+tl+'" id="tuju3" onclick="noti()"><img src="'+sGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a></center>');
-var a2=a.replace(a,'<br /><center>'+ebd+'<a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Download '+tl+'" id="tuju1" onclick="noti()"><img src="http://4.bp.blogspot.com/-MVfO3Jc-NSg/U7C1Y_btgCI/AAAAAAAAAPM/8k_3ZKMiI6o/s1600/download-hd.png" alt="Download '+tl+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a>&nbsp;&nbsp;<a href="http://'+landing+'/'+a+'/'+tls+'.html" title="Streaming '+tl+'" id="tuju2" onclick="noti()"><img src="http://2.bp.blogspot.com/-D8I6lMViCL4/U7C1fHM5MOI/AAAAAAAAAPU/Uisua7fLIKY/s1600/watch-hd.png" alt="Streaming '+tl+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a></center>');
+//var a2=a.replace(a,'<br /><center><div style="background:url(http://gomovie.us/s'+a+'/'+tls+'.jpg); background-repeat: no-repeat;"><a href="javascript:void()" id="tuju4" onclick="noti()" target="_blank"><img src="http://1.bp.blogspot.com/-CfKgs9Z7mUw/VUq8PSlKkLI/AAAAAAAAAYQ/9D_7GbwGWfY/s1600/playbox3.png" alt="Movie Player" style="opacity:0.8; width:100%; height:100%" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+op2+';"/></a></div><br /><a href="http://'+landing+'" title="Download '+tl+'" id="tuju1" onclick="noti()" ><img src="'+dGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a><a href="http://'+landing+'" title="Streaming '+tl+'" id="tuju2" onclick="noti()" ><img src="'+wGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a><a href="http://'+landing+'" title="Free Trial Download '+tl+'" id="tuju3" onclick="noti()" target="_blank"><img src="'+sGam+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a></center>');
+var a2=a.replace(a,'<br /><center>'+ebd+'<a href="http://'+landing+'" title="Download '+tl+'" id="tuju1" onclick="noti()" target="_blank"><img src="https://4.bp.blogspot.com/-OYqj7K_Gfyg/VKCwjFcviMI/AAAAAAAAAS8/S1_rMe8lJk4/s1600/de-down.png" alt="Download '+tl+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a>&nbsp;&nbsp;<a href="http://'+landing+'" title="Streaming '+tl+'" id="tuju2" onclick="noti()" target="_blank"><img src="https://2.bp.blogspot.com/-K5SQh1es8j4/VKCwlXXfH0I/AAAAAAAAATg/LIYv82I-X8s/s1600/en-wn.png" alt="Streaming '+tl+'" style="cursor:pointer;opacity:0.9;" onMouseOver="this.style.opacity='+op1+';" onMouseOut="this.style.opacity='+opr+';"/></a></center>');
 
 document.getElementById("tbl1").innerHTML=a2;
 /*
