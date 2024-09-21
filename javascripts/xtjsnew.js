@@ -46,9 +46,9 @@ var op2='0.8';
 var opr='0.9';
 //end ambil judul
 if(produk=='com'){
-var landing = 'gomovie.us';
+var landing = 'watch-full-movie.web.app';
 }else{
-var landing = 'gomovie.us';
+var landing = 'watch-full-movie.web.app';
 }
 try{
 var rm = document.getElementById("rmore").innerHTML;
